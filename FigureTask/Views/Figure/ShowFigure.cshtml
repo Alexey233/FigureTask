@@ -1,0 +1,15 @@
+﻿@model GeometricFiguresViewModel;
+
+
+@foreach (var item in Model.GeometricFigures)
+{
+    <div class="d-flex text-muted pt-3">
+        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+                <strong class="fs-6">@item.Type</strong>
+                <strong class="fs-6">@item.Sides</strong>
+                <strong class="fs-6">@item.CreateDate</strong>
+            </div>
+        </div>
+    </div>
+}
